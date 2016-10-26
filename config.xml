@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XmltoJava name="Selenium_Automation">
+ 	<suite suitename="Hystrix_Service" classname="Hystrix_Service">
+     		<parameter name="Hystrix_Service" testcase="title" param="" param1="" param2="" dependson=""/>
+     		<parameter name="Hystrix_Service" testcase="hystrix_stream" param="http://104.199.224.192:9006/" param1="2000" param2="Test" dependson=""/>
+     		<parameter name="Hystrix_Service" testcase="monitor" param="" param1="" param2="" dependson=""/>
+	</suite>
+</XmltoJava>
+
+
+
+
+
