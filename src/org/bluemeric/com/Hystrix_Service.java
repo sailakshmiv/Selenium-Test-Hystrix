@@ -80,11 +80,12 @@ import junit.framework.Assert;
 		
 		WebDriverWait wait =new WebDriverWait(driver,100);
 		//wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='stream']")))).sendKeys("http://"+url1[0]+":9006/"+"hystrix.stream");
-		//driver.navigate().to("http://"+url1[0]+":9006/");
-		driver.navigate().to("http://104.199.158.27:9006/");
+		driver.navigate().to("http://"+url1[0]+":9006/");
+		//driver.navigate().to("http://104.199.158.27:9006/");
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='ROOT-2521314']/div/div[2]/div/div/div/div/div[1]/div/div/div[2]/div")))).click();
 		driver.navigate().back();
-		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='stream']")))).sendKeys("http://104.199.158.27:9006/hystrix.stream");
+		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='stream']")))).sendKeys("http://"+url1[0]+":9006/"+"hystrix.stream");
+		//wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='stream']")))).sendKeys("http://104.199.158.27:9006/hystrix.stream");
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='delay']")))).sendKeys(param1);
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(".//*[@id='title']")))).sendKeys(param2);
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("html/body/div[1]/center/button")))).click();
