@@ -65,9 +65,8 @@ import junit.framework.Assert;
 	
 	@Parameters({"param","param1"})
 	@Test
-	public void title(@Optional String param,@Optional String param1) throws IOException, InterruptedException{
-		
-		Thread.sleep(300000);
+	public void title(@Optional String param,@Optional String param1) throws IOException{
+
 		driver.get(url);
 		driver.manage().window().maximize();
 		Assert.assertEquals("Hystrix Dashboard", driver.getTitle());
@@ -198,5 +197,4 @@ import junit.framework.Assert;
 
 }
 	
-
 
