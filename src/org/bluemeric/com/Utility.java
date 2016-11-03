@@ -27,7 +27,8 @@ public class Utility implements ITestListener {
 	Suite suite = new Suite();
 	String screenload = System.getProperty("user.dir") + "/test-output/html/";
 	String screenget = "";
-	static String url = "http://" + System.getProperty("APP_ENDPOINT");
+	static String url = "http://" + System.getenv("APP_ENDPOINT")+":"+ System.getenv("APP_PORT");	
+	//static String url = "http://" + System.getProperty("APP_ENDPOINT");
 	WebDriver driver = suite.newDriver();
 	static Logger log = Logger.getLogger(Utility.class);
 	
