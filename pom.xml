@@ -12,7 +12,7 @@
   </repositories>
   
   <build>
-  
+  <finalName>Hystrix-UITest</finalName>
     <sourceDirectory>src</sourceDirectory>
     
     <resources>
